@@ -1,5 +1,7 @@
 package ch_02;
 
+import common.Apple;
+import common.Color;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -16,7 +18,7 @@ public class Executor {
         inventory.add(apple);
 
         prettyPrintApple(inventory,
-                item -> String.format("Apple color: %s, wight: %f", item.getColor().name(), item.getWeight()));
+                item -> String.format("common.Apple color: %s, wight: %f", item.getColor().name(), item.getWeight()));
     }
 
     private void prettyPrintApple(List<Apple> inventory, AppleFormatter formatter) {

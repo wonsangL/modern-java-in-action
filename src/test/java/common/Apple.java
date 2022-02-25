@@ -1,8 +1,19 @@
-package ch_02;
+package common;
 
 public class Apple {
     private Color color;
     private float weight;
+    private String name;
+
+    public Apple() {
+
+    }
+
+    public Apple(Color color, float weight, String name) {
+        this.color = color;
+        this.weight = weight;
+        this.name = name;
+    }
 
     public Color getColor() {
         return color;
