@@ -16,8 +16,8 @@ public class MemoryAccessTest {
 
             Thread internalThread = new Thread(() -> {
                 try {
-                    System.out.println("inner thread start!!");
                     Thread.sleep(3000);
+                    System.out.println("inner thread start!!");
                     Assert.assertEquals(Color.RED, apple.getColor());
                     System.out.println("inner thread end!!");
                 } catch (InterruptedException e) {
