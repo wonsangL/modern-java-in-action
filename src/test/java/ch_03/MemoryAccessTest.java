@@ -23,11 +23,11 @@ public class MemoryAccessTest {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            });
+            }, "inner thread");
 
             internalThread.start();
             System.out.println("outer thread end!!");
-        });
+        } , "outer thread");
 
         thread.start();
 
