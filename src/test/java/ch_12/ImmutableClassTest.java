@@ -5,12 +5,12 @@ import org.junit.Test;
 public class ImmutableClassTest {
     @Test
     public void immutableClassTest() {
-        String name = "wonsang";
+        String name = "hello";
         String copy = name;
 
         System.out.println(name == copy);
 
-        name = "hyunhee";
+        copy += " world";
 
         System.out.println(name == copy);
     }
